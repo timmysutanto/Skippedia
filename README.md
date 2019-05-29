@@ -33,3 +33,9 @@ Adapun fungsionalitas-fungsionalitas minimum yang perlu dimiliki website, yaitu 
 - Kerapihan _repository_ & kode, termasuk **README**.
 
 Nilai maksimum yang bisa didapatkan adalah **5500 (6500 dengan bonus)** poin __per anggota__.
+
+
+NOTES :
+
+1. Jalanin Server : CD ke mysite, terus jalanin "python3 manage.py runserver"
+2. Masuk ke web : Salin ip address yg keluar abis jalanin server.
