@@ -1,0 +1,11 @@
+<h1>Rate {{ mahasiswa.nama }}</h1>
+
+<form action="{% url 'mahasiswa:rate' mahasiswa.nim %}" method="POST">
+{% csrf_token %}
+    <input type="radio" name="rate" value="1"> 1 <br>
+    <input type="radio" name="rate" value="2"> 2 <br>
+    <input type="radio" name="rate" value="3"> 3 <br>
+    <input type="radio" name="rate" value="4"> 4 <br>
+    <input type="radio" name="rate" value="5"> 5 <br>
+    <input type="submit" value="Rate">
+</form>

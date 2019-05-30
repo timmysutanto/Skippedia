@@ -1,0 +1,21 @@
+<h1>Profil Mahasiswa</h1>
+<h2>{{ mahasiswa.nama }}</h2>
+<h2>{{ mahasiswa.nim }}</h2>
+<h2> Rating : </h2>
+
+<ul>
+    {% for rating in mahasiswa.rating_set.all %}
+        <li>{{ rating.rate }}</li>
+    {% endfor %}
+</ul>    
+
+<a href="{% url 'mahasiswa:rate' mahasiswa.nim %}">Rate</a>
+
+<ul>
+{% for komentar in mahasiswa.komentar_set.all %}
+    <li>{{ komentar.isi_komentar }}</li>
+{% endfor %}
+</ul>
+
+<a href="{% url 'mahasiswa:comment' mahasiswa.nim %}">Comment</a>
+

@@ -1,0 +1,6 @@
+<h1>Daftar Mahasiswa</h1>
+<ul>
+{% for mahasiswa in mahasiswa_list %}
+    <li><a href="{% url 'mahasiswa:profil' mahasiswa.nim %}">{{ mahasiswa.nim }}</a></li>
+{% endfor %}
+</ul>

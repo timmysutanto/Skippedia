@@ -1,0 +1,7 @@
+<h1>Comment {{ mahasiswa.nama }}</h1>
+
+<form action="{% url 'mahasiswa:comment' mahasiswa.nim %}" method="POST">
+{% csrf_token %}
+    <input type="text" name="comment">
+    <input type="submit" value="Comment">
+</form>
