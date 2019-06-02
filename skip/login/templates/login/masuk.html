@@ -1,0 +1,13 @@
+{% block content %}
+
+    <h1>HOMEPAGE</h1>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <br>
+            <button class="btn">login</button>
+        </form>
+    </div>
+
+{% endblock %}

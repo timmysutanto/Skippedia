@@ -1,0 +1,15 @@
+{% block content %}
+
+    <h1>HOMEPAGE</h1>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <br>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+
+    Jika sudah punya akun, silahkan <a href="/login">login</a>
+{% endblock %}

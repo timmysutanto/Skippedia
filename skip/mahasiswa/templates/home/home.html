@@ -1,8 +1,6 @@
-<h1>Daftar Mahasiswa {username}</h1>
+<h1>Daftar Mahasiswa</h1>
 <ul>
 {% for mahasiswa in mahasiswa_list %}
     <li><a href="{% url 'mahasiswa:profil' mahasiswa.nim %}">{{ mahasiswa.nim }}</a></li>
 {% endfor %}
-
-<p><a href="/logout">logout</a></p>
 </ul>
